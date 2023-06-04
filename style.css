@@ -115,7 +115,12 @@ a {
 
 #cursorDiv {
   width: fit-content;
+  transition: .4s;
+}
+
+#cursorDiv:hover{
   cursor: pointer;
+  scale: 125%;
 }
 
 .hamburger {
