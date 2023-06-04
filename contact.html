@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/caa7bfb7bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link
+      rel="shortcut icon"
+      href="Images/WrenchKeyboardLogoStroke.svg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div id="background">
+      <div id="hamburgerDiv">
+        <div id="cursorDiv">
+          <p class="hamburger"></p>
+          <p class="hamburger"></p>
+          <p class="hamburger"></p>
+        </div>
+      </div>
+      <nav id="nav">
+        <ul id="navList" class="navDisplaySetting">
+          <li class="menuItems">
+            <a id="homeHover" class="menuLink" href="index.html"
+              ><i id="homeButton" class="fa-solid fa-house"></i
+            ></a>
+          </li>
+          <li class="menuItems">
+            <a id="projectHover" class="menuLink" href="projects.html"
+              ><i id="projectButton" class="fa-solid fa-gamepad"></i
+            ></a>
+          </li>
+          <li class="menuItems">
+            <a id="resumeHover" class="menuLink" href="resume.html"
+              ><i id="resumeButton" class="fa-solid fa-file-lines"></i
+            ></a>
+          </li>
+          <li class="menuItems">
+            <a id="contactHover" class="menuLink" href="contact.html"
+              ><i id="contactButton" class="fa-solid fa-message"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div id="messageBoxBG">
+        <form
+          action="http://localhost/TestingServer/form-handler.php"
+          method="post"
+          id="contactForm"
+        >
+          <label for="message" id="messageLabel">Message Me:</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter Message Here..."
+            required
+          ></textarea>
+          <p id="pleaseAdd">Please add your contact information:</p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <input type="submit" id="submitBtn" value="Send" />
+        </form>
+      </div>
+      <p id="or">OR</p>
+      <div id="emailDiv">
+        <p id="myEmailLabel">Send me an E-Mail</p>
+        <p>@</p>
+        <p id="myEmail">twilliams@bromanguy.com</p>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
