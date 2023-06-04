@@ -189,8 +189,12 @@ a {
 }
 
 #gitHub, #linkedIn{
-  width: clamp(4rem, 10vw, 5rem);
-  margin: 0 2rem 1rem 2rem;
+  width: clamp(3rem, 10vw, 5rem);
+  transition: .3s;
+}
+
+#gitHub:hover, #linkedIn:hover{
+  scale: 125%;
 }
 
 /* 
@@ -220,12 +224,23 @@ This is home page CSS
 
 #heading {
   text-align: center;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  width: 70%;
 }
 
 #greetingText {
   font-size: clamp(1.5rem, 8vw, 5rem);
-  margin: 1rem 2rem;
-  padding: clamp(1rem, 2vw, 2rem);
+  padding: clamp(1rem, 2vw, 1.5rem);
+}
+
+#homeSocialLogos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 3rem;
 }
 
 .udrDivs {
@@ -397,6 +412,22 @@ This is projects page CSS
             \/
             \/
 */
+
+#projectsInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: clamp(1rem, 2vw, 2rem);
+  background-color: black;
+  width: 95%;
+  padding: clamp(2rem, 3vw, 4rem);
+  border-radius: 2rem;
+  border: 2px rgb(98, 98, 98) solid;
+  gap: 2rem;
+}
 
 /* Calculator */
 
